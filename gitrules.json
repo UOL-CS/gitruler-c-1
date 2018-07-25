@@ -1,0 +1,32 @@
+{
+  "setup-files": [
+    {"path":"files/ideas/air-conditioning.bak", "contents":"Here's where I'll write the details of this idea"},
+    {"path":"files/ideas/better-signs.bak", "contents":"Here's where I'll write the details of this idea"},
+    {"path":"files/ideas/bigger-apples.bak", "contents":"Here's where I'll write the details of this idea"},
+    {"path":"files/ideas/blue-uniforms.bak", "contents":"Here's where I'll write the details of this idea"},
+    {"path":"files/ideas/chairs.bak", "contents":"Here's where I'll write the details of this idea"},
+    {"path":"files/ideas/hire-more-staff.bak", "contents":"Here's where I'll write the details of this idea"},
+    {"path":"files/ideas/new-website.bak", "contents":"Here's where I'll write the details of this idea"},
+    {"path":"files/ideas/smaller-plums.bak", "contents":"Here's where I'll write the details of this idea"},
+    {"path":"files/ideas/drafts/draft-idea-a.txt", "contents":"Here's where I'll write the details of this idea"}, 
+    {"path":"files/ideas/drafts/draft-idea-b.txt", "contents":"Here's where I'll write the details of this idea"}, 
+    {"path":"files/ideas/drafts/draft-idea-c.txt", "contents":"Here's where I'll write the details of this idea"}, 
+    {"path":"files/ideas/drafts/draft-idea-d.txt", "contents":"Here's where I'll write the details of this idea"}, 
+    {"path":"files/ideas/drafts/draft-idea-e.txt", "contents":"Here's where I'll write the details of this idea"}, 
+    {"path":"files/ideas/drafts/draft-idea-f.txt", "contents":"Here's where I'll write the details of this idea"}, 
+    {"path":"files/ideas/drafts/draft-idea-g.txt", "contents":"Here's where I'll write the details of this idea"}, 
+    {"path":"files/ideas/drafts/draft-idea-h.txt", "contents":"Here's where I'll write the details of this idea"}, 
+    {"path":"files/ideas/chairs.txt", "contents":"\nI have more ideas about this idea"},
+    {"path":"files/ideas/hire-more-staff.txt", "contents":"\nI have more ideas about this idea"},
+    {"path":"files/ideas/new-website.txt", "contents":"\nI have more ideas about this idea"},
+    {"path":"files/ideas/smaller-plums.txt", "contents":"\nI have more ideas about this idea"}  
+  ],
+  "rules":[
+    { "rule": "text", "separator":"-", "width":120, "heading":"IGNORING FILES", "double-space":true},
+    { "rule":"ignored", "path":"files/ideas/any.bak"},
+    { "rule":"ignored", "path":"files/ideas/drafts/any.txt"},
+    { "rule":"any-commit-message-contains", "contents":"Ignore draft and backup ideas", "ignore-case":true},
+    { "rule":"commit-with-message-updated-file", "path" : "files/ideas/chairs.txt", "contents": "add initial ideas", "ignore-case": true},
+    { "rule": "commit-with-message-doesnt-update-file", "contents":"add initial ideas", "path":".gitignore", "ignore-case":true}
+  ]
+}
