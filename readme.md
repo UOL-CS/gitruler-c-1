@@ -25,9 +25,9 @@ For more information on running gitruler look at the [project repository](https:
 
 ## Ignoring Files
 
-If there are many files in our directories that we never want to track using git then we can tell git to ignore them. This often happens when programming where we don't want to commit compiled files. 
+If there are many files in our directories that we never want to track using git then we can tell git to ignore them. This often happens during programming because we don't want to commit compiled files. 
 
-Imagine that the editor that our shop-keeper uses creates backup files whenever he edits a file. The `files/ideas` folder is full of `.bak` files. Rather than having to keep deleting these and so that we can add the whole `ideas` directory to a commit without adding these files, we want to ignore all them.
+Imagine that the file-editor used by our shop-keeper creates backup files whenever he edits a file. The `files/ideas` folder is full of these `.bak` files. Rather than having to keep deleting these and so that we can easily commit the  `ideas` directory, we want git to ignore all them.
 
 There is also a `files/ideas/drafts` folder where he keeps files that are not yet ready to commit. We want git to always ignore files within this folder.
 
@@ -40,9 +40,9 @@ There is also a `files/ideas/drafts` folder where he keeps files that are not ye
 It's decided to create a folder for great ideas and to remove some of the worst ones.
 
 1. Create a folder `files/ideas/great` (this is not a git action just creating a folder on your machine).
-2. [Use git to move](https://githowto.com/moving_files) `new-website.txt`, `better-signs.txt` and `hire-more-staff.txt` to the `files/ideas/great` folder.
-3. [Remove](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository) the files `smaller-plums.txt` and `blue-uniforms.txt` from git and commit this with the message "Remove bad ideas".
-4. Commit the moved files with the message "Move great ideas".
+2. [Use git to move](https://githowto.com/moving_files) `new-website.txt`, `better-signs.txt` and `put-locks-on-the-doors.txt` to the `files/ideas/great` folder.
+3. Commit the moved files with the message "Move great ideas".
+4. [Remove](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository) the files `smaller-plums.txt` and `blue-uniforms.txt` from git and commit this with the message "Remove bad ideas".
 5. Commit the removal of files with the message "Remove bad ideas".
 
 Once you are complete, push this repository.
