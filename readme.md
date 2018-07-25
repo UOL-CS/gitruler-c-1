@@ -33,7 +33,7 @@ There is also a `files/ideas/drafts` folder where he keeps files that are not ye
 
 1. Create the necessary file and contents so that git will ignore all files ending with `.bak` in the `files/ideas` folder and everything in the `files/ideas/drafts` folder.
 2. Commit this file with the commit message "Ignore draft and backup ideas".
-3. Commit all of the `.txt` files in the `files/ideas/` folder (you should now be able to stage them all with a single `git add` command) with the commit messages "Add initial ideas".
+3. Commit all of the `.txt` files in the `files/ideas/` folder (you should now be able to stage them all with a single `git add` command) with the commit messages "Add extra ideas".
 
 
 

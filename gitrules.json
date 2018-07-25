@@ -26,7 +26,7 @@
     { "rule":"ignored", "path":"files/ideas/any.bak"},
     { "rule":"ignored", "path":"files/ideas/drafts/any.txt"},
     { "rule":"any-commit-message-contains", "contents":"Ignore draft and backup ideas", "ignore-case":true},
-    { "rule":"commit-with-message-updated-file", "path" : "files/ideas/chairs.txt", "contents": "add initial ideas", "ignore-case": true},
-    { "rule": "commit-with-message-doesnt-update-file", "contents":"add initial ideas", "path":".gitignore", "ignore-case":true}
+    { "rule":"commit-with-message-updated-file", "path" : "files/ideas/chairs.txt", "contents": "add extra ideas", "ignore-case": true},
+    { "rule": "commit-with-message-doesnt-update-file", "contents":"add extra ideas", "path":".gitignore", "ignore-case":true}
   ]
 }
