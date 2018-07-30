@@ -20,7 +20,7 @@ For more information on running gitruler look at the [project repository](https:
 
 ## Instructions
 
-1. After cloning the repository change into the director on a [command line](https://www.techopedia.com/definition/3337/command-line-interface-cli).
+1. After cloning the repository change into the directory on a [command line](https://www.techopedia.com/definition/3337/command-line-interface-cli).
 2. Run gitruler to initialise the exercise.
 
 ## Ignoring Files
@@ -45,7 +45,11 @@ It's decided to create a folder for great ideas and to remove some of the worst 
 4. [Remove](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository) the files `smaller-plums.txt` and `blue-uniforms.txt` from git and commit this with the message "Remove bad ideas".
 5. Commit the removal of files with the message "Remove bad ideas".
 
-Once you are complete, push this repository.
+## Submitting the results
+
+Once the exercise is complete, push this repository to the remote. If there are multiple branches for an exercise, make sure that you push them all. 
+
+To ensure that you have you correctly pushed everything that you need to, you could clone the remote repository into a separate folder and re-run gitruler.
 
 ## Resources
 
