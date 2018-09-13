@@ -1,35 +1,159 @@
 {
   "setup-files": [
-    {"path":"files/ideas/air-conditioning.bak", "contents":"Here's where I'll write the details of this idea"},
-    {"path":"files/ideas/better-signs.bak", "contents":"Here's where I'll write the details of this idea"},
-    {"path":"files/ideas/bigger-apples.bak", "contents":"Here's where I'll write the details of this idea"},
-    {"path":"files/ideas/blue-uniforms.bak", "contents":"Here's where I'll write the details of this idea"},
-    {"path":"files/ideas/drafts/draft-idea-a.txt", "contents":"Here's where I'll write the details of this idea"}, 
-    {"path":"files/ideas/drafts/draft-idea-b.txt", "contents":"Here's where I'll write the details of this idea"}, 
-    {"path":"files/ideas/drafts/draft-idea-c.txt", "contents":"Here's where I'll write the details of this idea"}, 
-    {"path":"files/ideas/drafts/draft-idea-d.txt", "contents":"Here's where I'll write the details of this idea"}, 
-    {"path":"files/ideas/drafts/draft-idea-e.txt", "contents":"Here's where I'll write the details of this idea"}, 
-    {"path":"files/ideas/drafts/draft-idea-f.txt", "contents":"Here's where I'll write the details of this idea"}, 
-    {"path":"files/ideas/drafts/draft-idea-g.txt", "contents":"Here's where I'll write the details of this idea"}, 
-    {"path":"files/ideas/drafts/draft-idea-h.txt", "contents":"Here's where I'll write the details of this idea"}, 
-    {"path":"files/ideas/chairs.txt", "contents":"\nI have more ideas about this idea"},
-    {"path":"files/ideas/hire-more-staff.txt", "contents":"\nI have more ideas about this idea"},
-    {"path":"files/ideas/new-website.txt", "contents":"\nI have more ideas about this idea"},
-    {"path":"files/ideas/smaller-plums.txt", "contents":"\nI have more ideas about this idea"}  
+    {
+      "path": "files/ideas/air-conditioning.bak",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/better-signs.bak",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/bigger-apples.bak",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/blue-uniforms.bak",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/drafts/draft-idea-a.txt",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/drafts/draft-idea-b.txt",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/drafts/draft-idea-c.txt",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/drafts/draft-idea-d.txt",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/drafts/draft-idea-e.txt",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/drafts/draft-idea-f.txt",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/drafts/draft-idea-g.txt",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/drafts/draft-idea-h.txt",
+      "contents": "Here's where I'll write the details of this idea"
+    },
+    {
+      "path": "files/ideas/chairs.txt",
+      "contents": "\nI have more ideas about this idea"
+    },
+    {
+      "path": "files/ideas/hire-more-staff.txt",
+      "contents": "\nI have more ideas about this idea"
+    },
+    {
+      "path": "files/ideas/new-website.txt",
+      "contents": "\nI have more ideas about this idea"
+    },
+    {
+      "path": "files/ideas/smaller-plums.txt",
+      "contents": "\nI have more ideas about this idea"
+    }
   ],
-  "rules":[
-    { "rule": "text", "separator":"-", "width":120, "heading":"IGNORING FILES", "double-space":true},
-    { "rule":"ignored", "path":"files/ideas/any.bak", "alternative-title":"Git ignores all backup files in files/ideas", "score-if-correct":10},
-    { "rule":"ignored", "path":"files/ideas/drafts/any.txt", "alternative-title":"Git ignores all draft ideas", "score-if-correct":10},
-    { "rule":"any-commit-message-contains", "contents":"Ignore draft and backup ideas", "ignore-case":true, "score-if-correct":5},
-    { "rule":"commit-with-message-updated-file", "path" : "files/ideas/chairs.txt", "contents": "add extra ideas", "ignore-case": true, "score-if-correct":5},
-    { "rule":"commit-with-message-doesnt-update-file", "contents":"add extra ideas", "path":".gitignore", "ignore-case":true, "score-if-correct":10},
-    { "rule":"text", "separator":"-", "width":120, "heading":"MOVING AND REMOVING FILES", "double-space":true},
-    { "rule":"commit-with-message-updated-file", "path" : "files/ideas/great/new-website.txt", "contents":"move great ideas", "ignore-case": true, "score-if-correct":10},
-    { "rule":"commit-with-message-updated-file", "path" : "files/ideas/great/better-signs.txt", "contents":"move great ideas", "ignore-case": true, "score-if-correct":10},
-    { "rule":"commit-with-message-updated-file", "path" : "files/ideas/great/put-locks-on-the-doors.txt", "contents":"move great ideas", "ignore-case": true, "score-if-correct":10},
-    { "rule":"file-has-hash-in-head", "path":"files/ideas/great/put-locks-on-the-doors.txt", "hash":"b0464e3bab4b1da811ab46c57d9f2f2a6cc3dc50", "score-if-correct":10},
-    { "rule":"commit-with-message-updated-file", "path" : "files/ideas/smaller-plums.txt", "contents":"remove bad ideas", "ignore-case": true, "score-if-correct":10},
-    { "rule": "file-untracked-in-head", "path": "files/ideas/smaller-plums.txt", "score-if-correct":10},
+  "rules": [
+    {
+      "rule": "text",
+      "separator": "-",
+      "width": 100,
+      "heading": "IGNORING FILES",
+      "double-space": true
+    },
+    {
+      "rule": "ignored",
+      "path": "files/ideas/any.bak",
+      "alternative-title": "Git ignores all backup files in 'files/ideas'",
+      "score-if-correct": 10
+    },
+    {
+      "rule": "ignored",
+      "path": "files/ideas/drafts/any.txt",
+      "alternative-title": "Git ignores all draft ideas",
+      "score-if-correct": 10
+    },
+    {
+      "rule": "any-commit-message-contains",
+      "contents": "Ignore draft and backup ideas",
+      "ignore-case": true,
+      "score-if-correct": 5
+    },
+    {
+      "rule": "commit-with-message-updated-file",
+      "path": "files/ideas/chairs.txt",
+      "contents": "add extra ideas",
+      "ignore-case": true,
+      "score-if-correct": 5,
+      "alternative-title": "Extra ideas files were committed",
+    },
+    {
+      "rule": "commit-with-message-doesnt-update-file",
+      "contents": "add extra ideas",
+      "path": ".gitignore",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "Only the extra ideas were committed by that commit.",
+    },
+    {
+      "rule": "text",
+      "separator": "-",
+      "width": 120,
+      "heading": "MOVING AND REMOVING FILES",
+      "double-space": true
+    },
+    {
+      "rule": "commit-with-message-updated-file",
+      "path": "files/ideas/great/new-website.txt",
+      "contents": "move great ideas",
+      "ignore-case": true,
+      "score-if-correct": 10
+    },
+    {
+      "rule": "commit-with-message-updated-file",
+      "path": "files/ideas/great/better-signs.txt",
+      "contents": "move great ideas",
+      "ignore-case": true,
+      "score-if-correct": 10
+    },
+    {
+      "rule": "commit-with-message-updated-file",
+      "path": "files/ideas/great/put-locks-on-the-doors.txt",
+      "contents": "move great ideas",
+      "ignore-case": true,
+      "score-if-correct": 10
+    },
+    {
+      "rule": "file-has-hash-in-head",
+      "path": "files/ideas/great/put-locks-on-the-doors.txt",
+      "hash": "b0464e3bab4b1da811ab46c57d9f2f2a6cc3dc50",
+      "score-if-correct": 10
+    },
+    {
+      "rule": "commit-with-message-updated-file",
+      "path": "files/ideas/smaller-plums.txt",
+      "contents": "remove bad ideas",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "The Smaller Plums idea was removed in the correct commit",
+    },
+    {
+      "rule": "file-untracked-in-head",
+      "path": "files/ideas/smaller-plums.txt",
+      "score-if-correct": 10,
+      "alternative-title": "The Smaller Plums idea file is no longer tracked",
+    }
   ]
 }
