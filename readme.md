@@ -4,7 +4,7 @@ Marked Style: Github
 
 # GitRuler Section C
 
-This repository is section C of the [GitRuler exercises](https://github.com/UOL-CS/gitruler-exercises). If you do not already have a your own repository for these exercises [fork this repository](https://help.github.com/articles/fork-a-repo/). Clone this repository
+This repository is section C of the [GitRuler exercises](https://github.com/UOL-CS/gitruler-exercises). If you do not already have a your own repository for these exercises [fork this repository](https://help.github.com/articles/fork-a-repo/). 
 
 In this exercise we will learn about moving and removing files within a repository and telling git to ignore a set of files.
 
